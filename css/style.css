@@ -1,0 +1,92 @@
+
+#invader {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #3c40c6 0%, #6d57cf 100%);
+
+}
+
+.pixel {
+    border: 1px solid grey;
+    background-color: lightgrey;
+    box-sizing: border-box;
+}
+
+.blue {
+    background-color: lightskyblue;
+}
+
+.green {
+    background-color: palegreen;
+}
+
+.red {
+    background-color: palevioletred;
+}
+
+.fof {
+    background-color: #FF00FF;
+}
+
+#palette-container {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    bottom: 0px;
+    right:0px;
+    background:rgba(0,0,0,.2);
+    height: 70px;
+    width: 220px;
+}
+
+.palette-color {
+    margin: .5em;
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    border-width: 2px;
+    border-style: solid;
+    cursor: pointer;
+}
+
+.palette-color:hover {
+    transform: scale(1.1);
+}
+
+.palette-color--active, 
+.palette-color--active:hover {
+    transform: scale(1.2);
+    border-width: 2px;
+}
+
+.configuration {
+    height: 150px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background: #272bad;
+}
+
+.configuration input {
+    padding: 1em;
+    border:0;
+    font-size: 1.2em;
+    width: 10em;
+    margin-right: 2px;
+}
+
+.configuration input:first-child {
+    border-radius: .5em 0 0 .5em;
+}
+
+.configuration button {
+    padding: 1em;
+    border:0;
+    font-size: 1.2em;
+    color: #fff;
+    background: #9957e4;
+    border-radius:0 .5em .5em 0;
+}
